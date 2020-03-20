@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>Hello</pattern>
+    <template>
+    <random>
+        <li>Hello</li>
+        <li>Hi</li>
+        <li>Good to see you</li>
+    </random>
+    , and what is your name?
+    </template>
+  </category>
+  
+  <category>
+      <pattern>Hi</pattern>
+      <template><srai>Hello</srai></template>
+  </category>
+  
+  <category>
+      <pattern>My name is *</pattern>
+      <template>Oh, Hi <star/>, so how can I help you</template>
+  </category>
+  
+  <category>
+      <pattern>_ weight control</pattern>
+      <template>No problem, we can help you.</template>
+  </category>
+  
+  <category>
+      <pattern> How _ help _ </pattern>
+      <template>Don't worry. 
+      Let me ask you several questions. 
+      How often do you eat the fast food?
+      </template>
+  </category>
+  
+  <category>
+      <that>_ fast food</that>
+      <pattern>often</pattern>
+      <template>I see. How often do you exercise?</template>
+  </category>
+  
+  <category>
+      <that>_ fast food</that>
+      <pattern>seldom</pattern>
+      <template>Very nice.How often do you exercise?</template>
+  </category>
+  
+  <category>
+      <that>_ fast food</that>
+      <pattern>always</pattern>
+      <template>That sounds not good. How often do you exercise?</template>
+  </category>
+  
+  <category>
+      <that>_ exercise</that>
+      <pattern>often</pattern>
+      <template>Reallt nice. Last question, are you ready to achieve weigt control?</template>
+  </category>
+  
+  <category>
+      <that>_ exercise</that>
+      <pattern>always</pattern>
+      <template>Excellent. Last question, are you ready to achieve weigt control?</template>
+  </category>
+  
+  <category>
+      <that>_ exercise</that>
+      <pattern>seldom</pattern>
+      <template>That's ok. Last question, are you ready to achieve weigt control?</template>
+  </category>
+  
+  <category>
+      <that>_ ready _</that>
+      <pattern>yes</pattern>
+      <template>
+        Bravo, let's dive straight in!
+        Here is one book you can read,
+        <link>
+            <text>receipe for weight control</text>
+            <url>https://www.sanmin.com.tw/Product/index/006689198</url>
+        </link>
+      </template>
+  </category>
+  
+  <category>
+      <that>_ ready _</that>
+      <pattern>No</pattern>
+      <template>ah, goodbye</template>
+  </category>
+  
+  <category>
+      <pattern>_ else _ </pattern>
+      <template>
+        Then, this is your exercise plan.
+            <image>https://27.media.tumblr.com/tumblr_luxntl5eW31qfip11o1_500.png</image>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>_ problems</pattern>
+      <template>
+          Just come to our clinic.
+          This is our address.XXXX
+          Feel free to come here and we can face to face to talk about your personal problems.
+      </template>
+  </category>
+  
+  <category>
+      <pattern>Thank you</pattern>
+      <template>Your welcome</template>
+  </category>
+  
+  <category>
+      <pattern>Thanks</pattern>
+      <template><srai>Thank you</srai></template>
+  </category>
+  
+</aiml>
